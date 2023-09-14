@@ -20,10 +20,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Pjha72/pawan-portfolio
+$ git clone https://github.com/Djha-03/Creative-Visionary-Portfolio-main.git
 
 # Go into the repository
-$ cd pawan-portfolio
+$ cd divakar-portfolio
 
 # Install dependencies
 $ yarn install
