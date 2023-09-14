@@ -1,0 +1,277 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  max-width: 540px;
+  text-align: center;
+  z-index: 10;
+}
+
+.home__img {
+  margin-bottom: 1.5rem;
+}
+
+.home__name {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}
+
+.home__socials {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  column-gap: 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.home__social-link {
+  color: var(--title-color);
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.home__social-link:hover {
+  color: hsl(353, 100%, 65%);
+}
+
+.scroll__down {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  width: 100%;
+}
+
+.home__scroll-name {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.mouse {
+  border: 2px solid #454360;
+  display: block;
+  height: 1.6rem;
+  width: 1.25rem;
+  margin: auto;
+  margin-top: 0.75rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+@keyframes ani-mouse {
+  0% {
+    top: 29%;
+  }
+
+  15% {
+    top: 50%;
+  }
+
+  50% {
+    top: 50%;
+  }
+
+  100% {
+    top: 29%;
+  }
+}
+
+.wheel {
+  background-color: var(--title-color);
+  border-radius: 100%;
+  width: 0.25rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: ani-mouse 2s linear infinite;
+}
+
+.shapes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.shape {
+  position: absolute;
+}
+
+.s1 {
+  left: 2%;
+  top: 10%;
+}
+
+.s2 {
+  left: 18%;
+  top: 30%;
+}
+
+.s3 {
+  left: 5%;
+  bottom: 30%;
+}
+
+.s4 {
+  left: 2%;
+  bottom: 10%;
+}
+
+.s5 {
+  left: 44%;
+  top: 10%;
+}
+
+.s6 {
+  left: 36%;
+  bottom: 10%;
+}
+
+.s7 {
+  top: 20%;
+  right: 25%;
+}
+
+.s8 {
+  right: 24%;
+  bottom: 20%;
+}
+
+.s9 {
+  right: 2%;
+  top: 10%;
+}
+
+.s10 {
+  top: 45%;
+  right: 11%;
+}
+
+.s11 {
+  bottom: 10%;
+  right: 2%;
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #333;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.buttons {
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 30px;
+}
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  padding: 10px 26px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fdfdfd;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FF4C61;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.blob-btn:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fcfcfd;
+  border-radius: 30px;
+}
+.blob-btn:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+.blob-btn:hover {
+  color: #fff;
+  border-radius: 30px;
+}
+.blob-btn:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #FF4C61;
+}
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url('#goo');
+}
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: #0505a9;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+@supports (filter: url('#goo')) {
+  transform { translate3d: (0, 150%, 0), scale(1.4);}
+}
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+.blob-btn:hover .blob-btn__blob {
+  transform: translateZ(0) scale(1.7);
+}
+@supports (filter: url('#goo')) {
+  transform { translateZ : (0) scale(1.4);}
+}
