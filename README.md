@@ -3,15 +3,15 @@
   <a href="">
   <img src="./src/components/home/me.png" alt="GregSithole" width="180"></a>
   <br>
-  Pawan Jha Personal Website
+  Divakar Jha Personal Website
   <br>
 </h1>
 
-<h4 align="center">A simple personal website about <a href="https://github.com/Pjha72" target="_blank">Pawan Jha</a>.</h4>
+<h4 align="center">A simple personal website about <a href="https://github.com/Pjha72" target="_blank">Divakar Jha</a>.</h4>
 
 <br>
 
-![Pawan-Jha](https://github.com/Pjha72/Creative-Visionary-Portfolio/assets/88606641/e2c523ad-2820-4981-bd86-503e3f345efa)
+![review](https://github.com/Djha-03/Creative-Visionary-Portfolio-main/assets/121291180/88b1a251-bbea-41ed-a4b2-4f185e34bea7)
 
 
 ## How To Use
